@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Output Faker</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="./icon.png">
+</head>
+<body>
+    <div class="header">
+        <h3>Output Faker</h3>
+    </div>
+    <div class="input_form">
+        <div class="input_user">
+            <p class="input">Enter the needed fields </p>
+            <input class="input form-control" placeholder="Username" id="username">
+            <input class="input form-control" placeholder="Filename" id="filename">
+            <textarea placeholder="Enter the outputs and inputs text" class="input form-control" id="textfield" rows="4" cols="50"></textarea>
+            <button class="download input btn btn-primary" type="button" onclick="sendData()">Submit</button>
+        </div>
+    </div>
+   <div class="download"> 
+  <button class="input btn btn-primary" onclick="captureDivAsImage()">Download Output Image</button>
+  </div> 
+  <div id="captureme" class="console">
+    <div class="console-titlebar">
+        <image class="icon" src="./icon.png"></image>
+        <span class="console-title">Command Prompt</span>
+      <div class="console-titlebar-controls">
+        <div class="console-titlebar-button minimize">-</div>
+        <div class="console-titlebar-button maximize"><span class="square"></span></div>
+        <div class="console-titlebar-button close">X</div>
+      </div>
+      
+    </div>
+    <div class="console-body">
+      <div class="console-output" id="console-output">Microsoft Windows [Version 10.0.22624.1755]<br>
+        (c) Microsoft Corporation. All rights reserved.</div>
+        <div class="console-output" id="console-output">C:\Users\<span id="user">bimal</span>><span id="file">toc1</span>.exe<br>
+        <span class="output" id="outputs">Test</span></div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
