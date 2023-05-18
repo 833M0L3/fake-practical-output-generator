@@ -21,3 +21,10 @@ function captureDivAsImage() {
       link.click();
     });
   }
+
+
+document.getElementById("roll123").addEventListener("click", rickroll);
+
+function rickroll() {
+ window.open("https://youtu.be/dQw4w9WgXcQ", "");
+}
